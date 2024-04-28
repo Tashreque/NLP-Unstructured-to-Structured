@@ -32,3 +32,8 @@ For this, a simple parsing based or rule based technique is applied.
 
 - This implementation only considers single worded parameter names since it is a split() based approach.
 - This implementation would fail to parse test results placed in wrong positions since it's a rule based approach. The rules can always be made more robust to accommodate more variation in the data.
+
+
+### Challenges faced
+
+Initially, I wanted to use an entity recognition based approach using Spacy, but the accuracy of the entity recognition was poor using pretrained models. I then thought of using regular expressions, but due to many different variations in the structure of the data, the use of regular expressions was getting quite complicated and hard to track.
